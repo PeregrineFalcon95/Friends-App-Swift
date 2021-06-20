@@ -11,5 +11,3 @@ The app will start fetching data after loading. It will continuously try to get 
 The app will change its cell width on device orientation change.
 
 Black and white color combination used for UI. Color will change with device mode. 
-
-

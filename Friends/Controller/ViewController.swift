@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if DataLoader.shared.isInternet == false {
+            noConnectedToInternet()
+        }
+        DataLoader.shared.delegate = self
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -43,7 +47,6 @@ class ViewController: UIViewController {
         collectionView.register(CollectionViewCell.nib(), forCellWithReuseIdentifier: Constant.cell )
         collectionView.delegate = self
         collectionView.dataSource = self
-        DataLoader.shared.delegate = self
         updateCollectionViewLayout()
     }
     func updateCollectionViewLayout(){
