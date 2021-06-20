@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -25,14 +25,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8g-NH-Q8D" userLabel="NavBar">
-                    <rect key="frame" x="0.0" y="0.0" width="1024" height="60"/>
+                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-HP-a5Y">
-                            <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
+                            <rect key="frame" x="8" y="8" width="50" height="36"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="6KF-VS-FZS">
@@ -53,8 +53,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="Vjp-HP-a5Y" firstAttribute="top" secondItem="c8g-NH-Q8D" secondAttribute="top" id="QuA-Vv-bAO"/>
-                        <constraint firstItem="Vjp-HP-a5Y" firstAttribute="leading" secondItem="c8g-NH-Q8D" secondAttribute="leading" id="V7b-eU-OZi"/>
+                        <constraint firstItem="Vjp-HP-a5Y" firstAttribute="leading" secondItem="c8g-NH-Q8D" secondAttribute="leading" constant="8" id="V7b-eU-OZi"/>
                         <constraint firstAttribute="bottom" secondItem="Vjp-HP-a5Y" secondAttribute="bottom" id="hSw-9s-se6"/>
                         <constraint firstAttribute="height" constant="44" id="tON-Sk-Es9">
                             <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -62,17 +61,17 @@
                     </constraints>
                 </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UJq-RG-lpG">
-                    <rect key="frame" x="0.0" y="60" width="1024" height="341.5"/>
+                    <rect key="frame" x="0.0" y="88" width="375" height="203"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gq0-Vq-hCq">
-                    <rect key="frame" x="0.0" y="401.5" width="1024" height="341.5"/>
+                    <rect key="frame" x="0.0" y="291" width="375" height="203"/>
                     <subviews>
                         <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZHs-Re-vQ1">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="341.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR7-Vn-dn6" userLabel="full Name">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20.333333333333332"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" name="blackAndWhite"/>
@@ -82,7 +81,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEI-bL-KsC" userLabel="cellNumber">
-                                    <rect key="frame" x="0.0" y="50" width="1024" height="40.5"/>
+                                    <rect key="frame" x="0.0" y="30.333333333333314" width="375" height="20.666666666666671"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" name="blackAndWhite"/>
@@ -92,11 +91,11 @@
                                     </variation>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0f-Pi-PXJ">
-                                    <rect key="frame" x="0.0" y="100.5" width="1024" height="40"/>
+                                    <rect key="frame" x="0.0" y="61.000000000000007" width="375" height="20.333333333333336"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <state key="normal" title="Button">
-                                        <color key="titleColor" name="blackAndWhite"/>
+                                        <color key="titleColor" name="blueYellow"/>
                                     </state>
                                     <variation key="heightClass=regular-widthClass=regular">
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -106,7 +105,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c56-6j-ZWc">
-                                    <rect key="frame" x="0.0" y="150.5" width="1024" height="40.5"/>
+                                    <rect key="frame" x="0.0" y="91.333333333333314" width="375" height="20.333333333333329"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" name="blackAndWhite"/>
@@ -116,7 +115,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKq-fl-k60">
-                                    <rect key="frame" x="0.0" y="201" width="1024" height="40"/>
+                                    <rect key="frame" x="0.0" y="121.66666666666667" width="375" height="20.333333333333329"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" name="blackAndWhite"/>
@@ -126,7 +125,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ9-fT-NJk">
-                                    <rect key="frame" x="0.0" y="251" width="1024" height="40.5"/>
+                                    <rect key="frame" x="0.0" y="152" width="375" height="20.666666666666657"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" name="blackAndWhite"/>
@@ -136,7 +135,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdr-bi-IeC">
-                                    <rect key="frame" x="0.0" y="301.5" width="1024" height="40"/>
+                                    <rect key="frame" x="0.0" y="182.66666666666669" width="375" height="20.333333333333343"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" name="blackAndWhite"/>
@@ -177,6 +176,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="gq0-Vq-hCq" firstAttribute="top" secondItem="UJq-RG-lpG" secondAttribute="bottom" id="5x3-pi-e1x"/>
+                <constraint firstItem="c8g-NH-Q8D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="85R-N0-ZWT"/>
                 <constraint firstItem="UJq-RG-lpG" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="8ef-uQ-OYq"/>
                 <constraint firstItem="UJq-RG-lpG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8m7-KI-OyF"/>
                 <constraint firstItem="gq0-Vq-hCq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GCK-vz-E38"/>
@@ -185,7 +185,6 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c8g-NH-Q8D" secondAttribute="trailing" id="OqD-jn-nlf"/>
                 <constraint firstItem="c8g-NH-Q8D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qho-HY-wi7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gq0-Vq-hCq" secondAttribute="trailing" id="oko-1E-lAs"/>
-                <constraint firstItem="c8g-NH-Q8D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pLY-cB-UKe"/>
                 <constraint firstItem="gq0-Vq-hCq" firstAttribute="height" secondItem="UJq-RG-lpG" secondAttribute="height" id="urI-xI-DHF"/>
             </constraints>
             <point key="canvasLocation" x="100.78125" y="91.800878477306"/>
@@ -194,6 +193,9 @@
     <resources>
         <namedColor name="blackAndWhite">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blueYellow">
+            <color red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -49,6 +49,10 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func onEmailPressed(_ sender: UIButton) {
+        let email = email.title(for: .normal)
+        if let url = URL(string: "mailto:\(String(describing: email))") {
+            UIApplication.shared.open(url)
+        }
     }
     
     func initialLoading(){
@@ -62,6 +66,7 @@ class DetailsViewController: UIViewController {
         country.text = detailsData?.country
     }
     @IBAction func onBackPressed(_ sender: UIButton) {
+        
         self.navigationController?.popViewController(animated: true)
     }
     
