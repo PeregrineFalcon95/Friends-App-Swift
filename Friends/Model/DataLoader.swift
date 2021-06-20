@@ -8,7 +8,7 @@
 import Foundation
 
 protocol dataLoaderDelegate : NSObjectProtocol {
-    func errorUpdatingData(idx: Int)
+    func noConnectedToInternet()
     func newDataUpdated()
 }
 
@@ -18,19 +18,28 @@ class DataLoader{
     weak var delegate : dataLoaderDelegate?
     
     //Fetching data and notifying viewController
+    //Will continue calling for Data until it complete 10 persons data. Will stop requesting if not internet error encountered.
     func fetchData(){
-        for num in 0..<10{
-            DataHandler.shared.getPersonalData { info in
-                guard let result = info else {
-                    if let delegate = self.delegate {
-                        delegate.errorUpdatingData(idx: num)
-                    }
-                    return
-                }
-                self.person.append(result)
+        getData()
+    }
+    func getData(){
+        DataHandler.shared.getPersonalData { info, isInternet  in
+            if isInternet == false {
                 if let delegate = self.delegate {
-                    delegate.newDataUpdated()
+                    delegate.noConnectedToInternet()
                 }
+                return
+            }
+            guard let result = info else {
+                self.getData()
+                return
+            }
+            self.person.append(result)
+            if let delegate = self.delegate {
+                delegate.newDataUpdated()
+            }
+            if self.person.count < 10 {
+                self.getData()
             }
         }
     }

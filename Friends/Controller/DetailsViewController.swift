@@ -45,7 +45,7 @@ class DetailsViewController: UIViewController {
     }
     
     deinit {
-        print("Deinit Called")
+        print("DetailsViewController Deinit Called")
     }
     
     @IBAction func onEmailPressed(_ sender: UIButton) {

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//MARK: Information Model for each person
 struct PersonalInfo {
     var image : UIImage
     var fullName : String

@@ -20,6 +20,9 @@
 		3B1CDAF4267E518A00590A14 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CDAF2267E518A00590A14 /* CollectionViewCell.xib */; };
 		3B1CDAF7267E56E000590A14 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CDAF5267E56E000590A14 /* DetailsViewController.swift */; };
 		3B1CDAF8267E56E000590A14 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CDAF6267E56E000590A14 /* DetailsViewController.xib */; };
+		3B5867A3267F615D00E4522C /* JsonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5867A2267F615D00E4522C /* JsonDataModel.swift */; };
+		3B5867A5267F61B800E4522C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5867A4267F61B800E4522C /* Constant.swift */; };
+		3B5867A7267F7FC900E4522C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B5867A6267F7FC900E4522C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		3B1CDAF2267E518A00590A14 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		3B1CDAF5267E56E000590A14 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		3B1CDAF6267E56E000590A14 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		3B5867A2267F615D00E4522C /* JsonDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataModel.swift; sourceTree = "<group>"; };
+		3B5867A4267F61B800E4522C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3B5867A6267F7FC900E4522C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		3B1CDAD1267E34DF00590A14 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				3B5867A6267F7FC900E4522C /* README.md */,
 				3B1CDAE9267E423100590A14 /* Singleton */,
 				3B1CDAE6267E421200590A14 /* Model */,
 				3B1CDAE7267E421800590A14 /* View */,
@@ -85,6 +92,7 @@
 			children = (
 				3B1CDAEB267E503700590A14 /* PersonalInfo.swift */,
 				3B1CDAEF267E50C800590A14 /* DataLoader.swift */,
+				3B5867A2267F615D00E4522C /* JsonDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +132,7 @@
 				3B1CDAD4267E34DF00590A14 /* SceneDelegate.swift */,
 				3B1CDADD267E34E000590A14 /* LaunchScreen.storyboard */,
 				3B1CDADB267E34E000590A14 /* Assets.xcassets */,
+				3B5867A4267F61B800E4522C /* Constant.swift */,
 			);
 			path = Accessories;
 			sourceTree = "<group>";
@@ -185,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5867A7267F7FC900E4522C /* README.md in Resources */,
 				3B1CDADF267E34E000590A14 /* LaunchScreen.storyboard in Resources */,
 				3B1CDADC267E34E000590A14 /* Assets.xcassets in Resources */,
 				3B1CDAF8267E56E000590A14 /* DetailsViewController.xib in Resources */,
@@ -203,9 +213,11 @@
 				3B1CDAD7267E34DF00590A14 /* ViewController.swift in Sources */,
 				3B1CDAEC267E503700590A14 /* PersonalInfo.swift in Sources */,
 				3B1CDAF0267E50C800590A14 /* DataLoader.swift in Sources */,
+				3B5867A3267F615D00E4522C /* JsonDataModel.swift in Sources */,
 				3B1CDAF7267E56E000590A14 /* DetailsViewController.swift in Sources */,
 				3B1CDAF3267E518A00590A14 /* CollectionViewCell.swift in Sources */,
 				3B1CDAD3267E34DF00590A14 /* AppDelegate.swift in Sources */,
+				3B5867A5267F61B800E4522C /* Constant.swift in Sources */,
 				3B1CDAD5267E34DF00590A14 /* SceneDelegate.swift in Sources */,
 				3B1CDAEE267E507E00590A14 /* DataHandler.swift in Sources */,
 			);
@@ -356,6 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Friends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Friends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

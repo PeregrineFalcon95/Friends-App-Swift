@@ -30,6 +30,6 @@ class CollectionViewCell: UICollectionViewCell {
         return UINib(nibName: "CollectionViewCell", bundle: nil)
     }
     deinit {
-        
+        print("Collection View Cell Deinit")
     }
 }
